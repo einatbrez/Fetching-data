@@ -1,13 +1,12 @@
 # Codex
 Assignment
 
-Hello,
-Thank you for this task.
-regarding the first section of the task -
-I'd rather use a Date object (than a xhr call that refreshes every second)
-I would have used the Date object with UTC time and updating it with a function using getHours, getMinutes, getSeconds methods.
+Hello! Thank you for assiging me with thie task,
 
-Apart from this issue, I hope you will enjoy my work.
+Regarding the first section -
+I've used an XHR call to get the time but perhaps using a Date object (with UTC) and calling it with methods such as getHours, getMinutes, getSeconds would be more efficient.
+
+I hope you will enjoy the results :-)
 
 Kind regards,
 Einat
