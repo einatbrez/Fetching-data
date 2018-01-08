@@ -1,0 +1,446 @@
+@import "variables";
+
+.container {
+    @extend %flex-def;
+    justify-content: center;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-family: $text-font;
+
+
+}
+header > div {
+    position: relative;  
+    padding: 10px;    
+}
+
+.header-icon {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 50px;
+}
+
+.time, .your-ip, .language {
+    @extend %header-item;
+}
+
+ 
+h2, h3, h4 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.dynamic-information{
+    font-weight: 700;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 20px 20px;
+    width: 100vw;
+}
+
+.activity-log {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 100%;
+}
+
+.information {
+    width: 25%;
+    height: 100%;    
+}
+
+.answers ,.interviews {
+    @extend %flex-def;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: $headlines-font;
+    color: $deep-blue;
+    margin-bottom: 5px;
+}
+
+.hand-shake-image{
+    background: url('../images/hand_shake.jpg') no-repeat center;
+    width: 15%;
+    height: 100px;
+}
+
+.calendar-image {
+    background: url('../images/calendar.jpg') no-repeat center;
+    width: 15%;
+    height: 100px;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    border: gray 1px solid;
+    padding: 10px 15px 10px 15px;
+}
+
+.older-answers{
+    height: 30px;
+    width: 100%;
+    background: gray;
+    color: whitesmoke;
+    font-family: $text-font;
+    padding-top: 8px;
+    padding-left: 15px;
+}
+
+.tell-us{
+    background: whitesmoke;
+    color: gray;
+    width: 25%;
+    height: 50px;
+    font-family: $text-font;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 15px;
+    align-self: center;
+    position: relative;
+}
+
+.fa-angle-right {
+    position: absolute;
+    top:15px;
+    font-size: 40px;
+    right: 8px;
+}
+
+.description {
+    font-family: $headlines-font;
+    padding-top: 3px;
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 55%;
+}
+
+.day {
+    color: gray;
+    margin-left: 10px;
+    font-weight: 400;
+}
+
+.new {
+    background: gray;
+    color: white;
+    border-radius: 20px;
+    padding: 0 10px 3px 10px;
+    margin-left:10px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.des-title {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.des-subtitle {
+    font-size: 16px;
+}
+
+.des-title > span {
+    font-weight: 700;
+}
+
+.more {
+    text-align: right;
+    display: block;
+    padding-right: 15px;
+    color: gray;
+}
+
+.des-aside {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.read {
+    background: whitesmoke;
+    color: gray;
+    width: 100%;
+    height: 50px;
+    font-family: $text-font;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 15px;
+    align-self: center;
+    position: relative;
+}
+
+.date-picker {
+    background: whitesmoke;
+    color: gray;
+    width: 100%;
+    height: 50px;
+    font-family: $text-font;
+    padding: 5px;
+    padding-left: 10px;
+    padding-top: 15px;
+    align-self: center;
+    position: relative;
+    margin-top: 3px;
+}
+
+.input-date {
+    color: $deep-blue;
+    font-family: $text-font;
+    width: 95%;
+    height: 30px;
+    padding-left: 3px;
+}
+
+.fa-calendar-alt {
+    position: absolute;
+    top: 22px;
+    right: 20px;
+    color: $deep-blue;
+    font-size: 20px;
+    pointer-events: none;
+}
+
+.counselor {
+    display: flex;
+}
+
+.fa-user {
+    color: gray;
+    border-radius: 50%;
+    border: 1px gray solid;
+    padding: 10px;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.counselor, .jobs, .share {
+    border: gray 1px solid;
+    padding: 10px;
+    font-family: $text-font;
+    margin-bottom: 30px;
+    box-shadow: 2px 4px 10px gray;
+}
+
+.counsol-details {
+    margin-bottom: 30px;
+}
+
+.jobs-count {
+    display: flex;
+}
+
+.favourits::before {
+    content: "5";
+    color: white;
+    margin-right: 5px;
+    background: deepskyblue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px 10px 5px 10px;
+}
+
+.relevant::before {
+    content: "23";
+    color: white;
+    margin-right: 5px;
+    background: deepskyblue;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+.favourits, .relevant{
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+.jobs > h4 {
+    margin-bottom: 20px;
+}
+
+.contact {
+    margin-top: 40px;
+}
+
+.contact > i {
+        margin-right: 1px;
+}
+
+.counselor-details > h3 {
+    margin-top: 5px;
+}
+
+.jobs {
+    padding-bottom: 40px;
+}
+
+.share-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.fa-bullhorn, .fa-share-alt {
+    font-size: 20px;
+    color: gray;
+}
+
+.share-click:hover, .share-click-b:hover{
+    cursor: pointer;
+}
+
+.rank {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.job-des > h3 {
+    margin-top: 40px;
+    color: $deep-blue;
+}
+
+.social-pop, .social-pop-b{
+    text-align: right;
+    //display: none;
+    overflow: hidden;    
+    max-height: 0;
+    transition: max-height 1s; 
+}
+.st-custom-button {
+   display: inline-block;
+   cursor: pointer;
+}
+
+.fa-linkedin, .fa-facebook {
+    font-size: 30px;
+    color: $deep-blue;
+}
+
+.is-visible {
+    //display: block;
+    max-height: 40px;
+}
+
+.contact > span{
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.help-footer {
+    color: $deep-blue;
+    text-align: center;
+    margin-top: 50px;
+}
+
+//media queries
+
+@media all and (max-width: 1024px) {
+    .content {
+    flex-wrap: wrap;
+    }
+    
+    .tell-us{
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .des-aside {    
+        width: 100%;
+    }
+
+    .description {
+        width: 60%;
+        margin-bottom: 5px;
+    }
+
+    .hand-shake-image{
+        width: 30%;
+    }
+    .calendar-image {
+        width: 30%;
+    }
+
+    .new {
+        border-radius: 20px;
+        padding: 0 5px 3px 5px;
+        margin-left:10px;
+        font-size: 15px;
+    }
+
+    .fa-calendar-alt {
+        right: 30px;
+    }
+
+    .fa-user {
+        font-size: 15px;
+    }
+
+    .jobs-count {
+        flex-wrap: wrap;
+        height: 70px;;
+    }
+
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+        height: 50px;
+    }  
+}
+
+@media all and (max-width: 768px) {
+    
+    .container {
+        flex-direction: column;
+    }
+    
+    header {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .time, .your-ip, .language {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    main {
+        flex-wrap: wrap;
+        padding: 0;
+        width: 100%;
+    }
+
+    .activity-log, .information{
+        width: 100%;
+    }
+      
+}
+
+
+    
+
+    

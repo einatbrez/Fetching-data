@@ -1,0 +1,23 @@
+$deep-blue: #435C72;
+
+$text-font: 'PT Sans', sans-serif;
+$headlines-font: 'Lato', sans-serif;
+
+%flex-def {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+%header-item {
+    background: $deep-blue;
+    color: whitesmoke;
+    width: 30%;
+    height: 100px;
+}
+
+%bold {
+    font-weight: 700;
+}
+
+
+

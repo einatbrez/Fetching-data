@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codex</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">    
+</head>
+<body>
+    <div class='container'>
+        <header>
+            <div class='time'>
+                <i class='far fa-caret-square-right header-icon'></i> 
+                <div id='demo'></div>   
+                <h2 class='dynamic-information current-time'></h2>
+                <h2 class='information-title'>Time</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class='your-ip'>
+                <i class='fas fa-comments header-icon'></i>
+                <h2 class='dynamic-information user-ip'></h2>
+                <h2 class='information-title'>Your IP</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+            <div class='language'>
+                <i class='fas fa-sort-amount-down header-icon'></i>
+                <h2 class='dynamic-information user-language'></h2>
+                <h2 class='information-title'>Language</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </header>
+        <main>
+            <div class='activity-log'>
+                <section class='answers'>
+                    <div class='section-title'>Answers</div>
+                    <div class='content'>
+                        <div class='hand-shake-image'></div>
+                        <div class='description'>
+                            <h3 class='des-title'><span>HP</span> - Experienced Developer</h3>
+                            <h4 class='des-subtitle bold'>Congratulations! you're hired! <span class='day'>Today</span><a class='new'>new</a></h4>
+                        </div>
+                        <div class='tell-us'>Tell us about your Codex recruiting process<i class="fas fa-angle-right"></i></div>
+                    </div>
+                    <a class='older-answers' href="">5 older answers</a>
+                </section>
+                <section class='interviews'>
+                    <div class='section-title'>Interviews</div>
+                    <div class='content'>
+                            <div class='calendar-image'></div>
+                            <div class='description'>
+                                <h3 class='des-title'>Experienced UX Architect</h3>
+                                <h4 class='des-subtitle bold'>You've been called for a first interview<span class='day'>Yesterday</span><a class='new'>new</a></h4>
+                                <p>Dear applicant, we recieved your resume through the Codex system and we are glad to inform you that we wish to interview you. In the next few days...</p>
+                                <a href="" class='more'>more</a>
+                            </div>
+                            <div class='des-aside'>
+                                <div class='read'>Read about the application process to prepare<i class="fas fa-angle-right"></i></div>
+                                <div class='date-picker'>
+                                    <input type="text" id="datepicker" class='input-date' placeholder="Scheduled date?">
+                                    <i id='dateicon' class="far fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                    </div>
+                    <div class='content'>
+                            <div class='calendar-image'></div>
+                            <div class='description'>
+                                <h3 class='des-title'>Experienced UX Architect</h3>
+                                <h4 class='des-subtitle bold'>You've been called for a first interview<span class='day'>Yesterday</span><a class='new'>new</a></h4>
+                                <p>Dear applicant, we recieved your resume through the Codex system and we are glad to inform you that we wish to interview you. In the next few days...</p>
+                                <a href="" class='more'>more</a>
+                            </div>
+                            <div class='des-aside'>
+                                <div class='read'>Read about the application process to prepare<i class="fas fa-angle-right"></i></div>
+                                <div class='date-picker'>
+                                    <input type="text" id="datepickerb" class='input-date' placeholder="Scheduled date?">
+                                    <i id='dateicon' class="far fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                    </div>
+                    <div class='content'>
+                            <div class='calendar-image'></div>
+                            <div class='description'>
+                                <h3 class='des-title'>Experienced UX Architect</h3>
+                                <h4 class='des-subtitle bold'>You've been called for a first interview<span class='day'>Yesterday</span><a class='new'>new</a></h4>
+                                <p>Dear applicant, we recieved your resume through the Codex system and we are glad to inform you that we wish to interview you. In the next few days...</p>
+                                <a href="" class='more'>more</a>
+                            </div>
+                            <div class='des-aside'>
+                                <div class='read'>Read about the application process to prepare<i class="fas fa-angle-right"></i></div>
+                                <div class='date-picker'>
+                                    <input type="text" id="datepickerc" class='input-date' placeholder="Scheduled date?">
+                                    <i id='dateicon' class="far fa-calendar-alt"></i>
+                                </div>
+                            </div>
+                    </div>
+                </section>
+            </div>
+            <aside class='information'>
+                <section class='counselor'>
+                    <i class="fas fa-user"></i>
+                    <div class='counselor-details'>
+                        <h3 class='bold'>Liat Bez Zvi</h3>
+                        <h3>Your recruitment counselor</h3>
+                        <div class='contact'>
+                            <i class='fas fa-phone'></i><span>Phone</span>
+                            <i class="fas fa-envelope"></i><span>Email</span>
+                        </div>
+                    </div>
+                </section>
+                <section class='jobs'>
+                    <h4 class='bold'>Search Jobs Listings</h4>
+                    <div class='jobs-count'>
+                        <h4 class='favourits'>Favourits</h4>
+                        <h4 class='relevant'>Relevant Jobs</h4>
+                    </div>
+                </section>
+                <section class='share'>
+                    <div class='share-title'>
+                        <h3 class='bold'>Share Job Listing</h3>
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class='job-des'>
+                        <h3 class='bold'>Entry Level Intellectual Property Attorney</h3>
+                        <p>Danish fontina cheddar halloumi. Croque monsieur everyone loves airedale big</p>
+                        <div class='rank'>
+                            <h3 class='stars'><i class="fas fa-star"></i> 4.5</h3>
+                            <div class='share-click'><i class="fas fa-share-alt"></i></div>
+                        </div>
+                        <div class='social-pop'>
+                            <div data-network="linkedin" class="st-custom-button" data-url='codex.co.il'><i class="fab fa-linkedin"></i></div>
+                            <div data-network="facebook" class="st-custom-button" data-url='codex.co.il'><i class="fab fa-facebook"></i></div>
+                        </div>
+                    </div>
+                    <div class='job-des'>
+                        <h3 class='bold'>Staff Attorney</h3>
+                        <p>Mascarpone who moved my cheese stilton. Port-salut cheese and wine edam taleggio</p>
+                        <div class='rank'>
+                            <h3 class='stars'><i class="fas fa-star"></i> 4</h3>
+                            <div class='share-click-b'><i class="fas fa-share-alt"></i></div>
+                        </div>
+                        <div class='social-pop-b'>
+                            <div data-network="linkedin" class="st-custom-button" data-url='codex.co.il'><i class="fab fa-linkedin"></i></div>
+                            <div data-network="facebook" class="st-custom-button" data-url='codex.co.il'><i class="fab fa-facebook"></i></div>
+                        </div>
+                    </div>
+                    <div class='help-footer'>Help your friends find more job openings</div>
+                </section>                
+            </aside>
+        </main>
+    </div>  
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5a50d08b0f300f0013e8333e&product=custom-share-buttons' async='async'></script>
+</body>
+</html>
